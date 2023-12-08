@@ -1,6 +1,17 @@
 {
   "dependencies": {
     "bootstrap": "^5.3.2",
-    "express": "^4.18.2"
-  }
+    "express": "^4.18.2",
+    "jquery": "^3.7.1",
+    "popper.js": "^1.16.1"
+  },
+  "name": "theevent",
+  "description": "Thanks for downloading this template!",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
 }

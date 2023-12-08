@@ -259,17 +259,93 @@ document.querySelectorAll('.dropdown-item').forEach(item => {
   });
 });
 
-
 function updateContent(data) {
   document.getElementById('title').textContent = data.title;
-  document.getElementById('intro').textContent = data.intro;
+  document.getElementById('about').textContent = data.about; // Update 'intro' to 'about'
+  document.getElementById('article').textContent = data.article;
+  document.getElementById('pics').textContent = data.pics;
+  document.getElementById('expert').textContent = data.expert;
+  document.getElementById('go_further').textContent = data.go_further;
+  document.getElementById('article_desc').textContent = data.article_desc;
+  document.getElementById('p_article_desc').textContent = data.p_article_desc;
+  document.getElementById('Climate_Change').textContent = data.Climate_Change;
+
+  document.getElementById('i135_p').textContent = data.i135_p;
+  document.getElementById('i140_h1').textContent = data.i140_h1;
+  document.getElementById('i143_h2').textContent = data.i143_h2;
+  document.getElementById('i144_p').textContent = data.i144_p;
+  document.getElementById('i149_h2').textContent = data.i149_h2;
+  document.getElementById('i151_p').textContent = data.i151_p;
+  document.getElementById('i157_h2').textContent = data.i157_h2;
+  document.getElementById('i159_p').textContent = data.i159_p;
+  document.getElementById('i163_h2').textContent = data.i163_h2;
+  document.getElementById('i165_p').textContent = data.i165_p;
+  document.getElementById('i169_h2').textContent = data.i169_h2;
+  document.getElementById('i171_p').textContent = data.i171_p;
+  document.getElementById('i175_h2').textContent = data.i175_h2;
+  document.getElementById('i176_p').textContent = data.i176_p;
+  document.getElementById('i198_h2').textContent = data.i198_h2;
+
+
+  document.getElementById('i199_p').textContent = data.i199_p;
+  document.getElementById('i494_h2').textContent = data.i494_h2;
+  document.getElementById('i198_h2').textContent = data.i198_h2;
+  document.getElementById('i495_p').textContent = data.i495_p;
+  document.getElementById('i505_h3').textContent = data.i505_h3;
+  document.getElementById('i506_p').textContent = data.i506_p;
+  document.getElementById('i515_h3').textContent = data.i515_h3;
+  document.getElementById('i516_p').textContent = data.i516_p;
+  document.getElementById('i525_h3').textContent = data.i525_h3;
+  document.getElementById('i527_p').textContent = data.i527_p;
+  document.getElementById('i608_h2').textContent = data.i608_h2;
+  document.getElementById('i617_div').textContent = data.i617_div;
+  document.getElementById('i621_p').textContent = data.i621_p;
+  document.getElementById('i626_div').textContent = data.i626_div;
+  document.getElementById('i630_p').textContent = data.i630_p;
+  document.getElementById('i635_div').textContent = data.i635_div;
+  document.getElementById('i639_p').textContent = data.i639_p;
+  document.getElementById('i644_div').textContent = data.i644_div;
+  document.getElementById('i648_p').textContent = data.i648_p;
+  document.getElementById('i653_div').textContent = data.i653_div;
+  document.getElementById('i657_p').textContent = data.i657_p;
+  document.getElementById('i674_h2').textContent = data.i674_h2;
+  document.getElementById('i675_p').textContent = data.i675_p;
+  document.getElementById('i695_h2').textContent = data.i695_h2;
+  document.getElementById('i696_p').textContent = data.i696_p;
+
   // Add more elements as needed
 }
 
+// Function to change language and reload the page
+function changeLanguage(lang) {
+  fetch(`/assets/translation/${lang}.json`)
+    .then(response => response.json())
+    .then(data => {
+      updateContent(data);
+      updateFlag(lang); // Call the updateFlag function
+      localStorage.setItem('selectedLanguage', lang);
+    });
+}
+
+// On page load, check if a language is stored in local storage, otherwise default to English
+window.addEventListener('load', function () {
+  var storedLanguage = localStorage.getItem('selectedLanguage');
+  changeLanguage(storedLanguage || 'en');
+});
 
 
+function updateFlag(lang) {
+  const flagImage = document.getElementById('flagImage');
+  if (flagImage) {
+    const newFlagImage = new Image();
+    newFlagImage.src = `https://flagcdn.com/w20/${lang}.png`;
+    newFlagImage.srcset = `https://flagcdn.com/w40/${lang}.png 2x`;
+    newFlagImage.width = 20;
+    newFlagImage.alt = lang.toUpperCase();
 
-
+    flagImage.parentNode.replaceChild(newFlagImage, flagImage);
+  }
+}
 
 
 })()

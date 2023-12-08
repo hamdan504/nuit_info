@@ -2,6 +2,28 @@
     "title": "Welcome",
     "intro": "This is a simple example for language switching.",
     "article_desc": "Article Description",
+<<<<<<< HEAD
     "p_article_desc": "exposes the hidden ecological,toll of lithium batteries, unraveling their seemingly green facade."
+=======
+    "p_article_desc": "exposes the hidden ecological toll of lithium batteries, unraveling their seemingly green facade.",
+    "135_article":"Article",
+    "136_p":"In the pursuit of sustainable energy, the dark side of lithium batteries emerges.",
+    "141_h1":"Climate Change: Lithium Batteries Unmasked - A Deeper Dive",
+    "144_h2":"Part 1: The Rise of Lithium Batteries and Their Promises",
+    "145_p":
+         "Child Labor Reports of children working in hazardous mining conditions have surfaced, highlighting serious ethical concerns about the industry's practices. Unsafe Working Conditions Miners face inadequate safety measures and exposure to hazardous substances, putting them at risk of severe injuries and occupational illnesses. Suppression of Indigenous Communities Indigenous communities, when mining activities commence in their territories, often face displacement from their ancestral lands and cultural disrespect. Their concerns and protests are frequently ignored or met with suppression.",
+      
+      
+         
+            "160_h2": "The Environmental Cost of Lithium Extraction - A Double-Edged Sword Despite their impressive capabilities, the environmental impact of lithium extraction poses_h a significant challenge to their clean energy image. The extraction process, employing methods such as brine extraction and hard rock mining, comes with environmental consequences.\n\nBrine Extraction Pumping salty water from underground reservoirs may seem innocuous, but it leads to significant water depletion, impacting local ecosystems and agriculture. Land subsidence and brine spills can further contaminate water sources, disrupting delicate ecological balances.\n\nHard Rock Mining Extracting lithium from hard rock deposits, often found in mountainous regions, results in deforestation, soil erosion, and the generation of substantial waste rock. The process involves the use of heavy metals and chemicals, posing risks of water contamination and air pollution."
+          
+          
+            ,
+                "175_h2": "Part 3: The Human Cost of Lithium Batteries - Unmasking Exploitation and Injustice",
+                "178_p_article": "The surge in lithium demand has exposed a harsh reality - the exploitation of indigenous communities and human rights violations. Lithium mines, often located in countries with lax environmental regulations, give rise to ethical concerns surrounding:\n\nChild Labor Reports of children working in hazardous mining conditions have surfaced, highlighting serious ethical concerns about the industry's practices.\n\nUnsafe Working Conditions Miners face inadequate safety measures and exposure to hazardous substances, putting them at risk of severe injuries and occupational illnesses.\n\nSuppression of Indigenous Communities Indigenous communities, when mining activities commence in their territories, often face displacement from their ancestral lands and cultural disrespect. Their concerns and protests are frequently ignored or met with suppression.",
+                "192_h2":"Part 4: The Recycling Problem - A Missed Opportunity to Close the Loop",
+                "p_article":"While recycling is pivotal for minimizing the environmental impact of lithium batteries, the current state of recycling rates remains abysmally low. Several challenges hinder effective recycling:"
+              
+>>>>>>> 93f0f2e6689b470aa9fb8971a27fe0eeb076e8da
 
     }

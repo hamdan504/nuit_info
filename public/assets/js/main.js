@@ -240,7 +240,7 @@
 
 // Function to change language and reload the page
 function changeLanguage(lang) {
-  fetch(`/assets/translation/${lang}.json`)
+  fetch(`./public/assets/translation/${lang}.json`)
     .then(response => response.json())
     .then(data => {
       updateContent(data);
@@ -318,7 +318,7 @@ function updateContent(data) {
 
 // Function to change language and reload the page
 function changeLanguage(lang) {
-  fetch(`/assets/translation/${lang}.json`)
+  fetch(`./public/assets/translation/${lang}.json`)
     .then(response => response.json())
     .then(data => {
       updateContent(data);
